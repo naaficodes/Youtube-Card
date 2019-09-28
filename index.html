@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- 	 
+AUTHOR  : ABDUL WAHID NAAFI
+INSTAGRAM : @IAM_NAAFI
+INSTAGRAM : @WEB.IO
+-->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<div class="maincont">
+	<div>
+	<div id="closebutton" onclick="closee()"><i class="material-icons">close</i></div>
+<div id="expcard" class="tofullpagecard" onclick="expand();">
+	<div id="vidtitle">Starlight<div id="athr">Jai Wolf</div></div>
+	
+	 <div id="playbutton"><i class="material-icons">play_circle_filled</i></div>
+	 <iframe id="emb" src="https://www.youtube.com/embed/Z9VoDwy-3Lc" frameborder="0"  allowfullscreen></iframe>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+	// AUTHOR  : ABDUL WAHID NAAFI
+// INSTAGRAM : @IAM_NAAFI
+// INSTAGRAM : @WEB.IO
+
+function expand() {
+		document.getElementById('expcard').className="none";
+		document.getElementById('emb').style.display="block";
+		document.getElementById('vidtitle').style.display="none";
+		document.getElementById('athr').style.display="none";
+		document.getElementById('playbutton').style.display="none";
+		document.getElementById('closebutton').style.display="block";
+	}
+	function closee() {
+		document.getElementById('expcard').className="tofullpagecard";
+		document.getElementById('emb').style.display="none";
+		document.getElementById('vidtitle').style.display="block";
+		document.getElementById('athr').style.display="block";
+		document.getElementById('playbutton').style.display="block";
+		document.getElementById('closebutton').style.display="none";
+	}
+</script>
+</body>
+</html>

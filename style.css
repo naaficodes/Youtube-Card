@@ -1,0 +1,99 @@
+/* AUTHOR  : ABDUL WAHID NAAFI
+INSTAGRAM : @IAM_NAAFI
+INSTAGRAM : @WEB.IO */
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+body
+{
+	background-color:#00A676;
+}
+.maincont
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.tofullpagecard
+{
+	background-image:url('https://i.ytimg.com/an_webp/Z9VoDwy-3Lc/mqdefault_6s.webp?du=3000&sqp=CKjIv-oF&rs=AOn4CLD34QC3Qg_rW4NK-_ycM1QYAVsxsQ'); 
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	margin: 20px;
+	height: 260px;
+	width: 250px;
+	border-radius: 10px;
+	color:white;
+	transition:box-shadow 0.5s,transform 0.8s,background-color 1s;
+	box-shadow: 0px 10px 25px #00000064;
+}
+.tofullpagecard:hover
+{
+	cursor: pointer;
+	box-shadow:-79px 100px 74px -10px #00000064;
+	transform: rotate(15deg);
+}
+#vidtitle
+{
+	font-family: 'Montserrat';
+	font-size: 2rem;
+	font-weight: bolder !important;
+	text-align: center;
+}
+#athr
+{
+	font-family: 'Montserrat';
+	font-size: 1rem;
+	margin-top: 5px;
+}
+#playbutton i
+{
+	font-size: 5rem;
+	color:white;
+}
+#emb 
+{
+	display: none;
+	box-shadow:-79px 100px 74px -10px #00000061;
+}
+iframe
+{
+	animation-name: rot;
+	animation-duration: 1s;
+	height: 315px !important;
+	width: 560px !important;
+}
+#closebutton
+{
+	color: white;
+	display: none;
+}
+#closebutton:hover
+{
+	cursor: pointer;
+}
+@keyframes rot
+{
+	0%
+	{
+		transform: rotate(15deg);
+		border-radius: 10px;
+		height: 260px;
+		width: 250px;
+	}
+	50%
+	{
+		border-radius: 10px;
+	}
+	100%
+	{
+		transform: rotate(0deg);
+		border-radius: 0px;
+		height: 315px;
+		width: 560px;
+	}
+}
+
